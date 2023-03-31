@@ -61,11 +61,16 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.col_Id,
             this.col_Prd,
             this.col_Qnt,
             this.col_Prc});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.ForeColor = System.Drawing.SystemColors.Window;
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(18, 46);
             this.listView1.Name = "listView1";
@@ -114,6 +119,7 @@
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Adicionar";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonRmv
             // 
@@ -127,6 +133,7 @@
             this.buttonRmv.TabIndex = 7;
             this.buttonRmv.Text = "Remover";
             this.buttonRmv.UseVisualStyleBackColor = false;
+            this.buttonRmv.Click += new System.EventHandler(this.buttonRmv_Click);
             // 
             // buttonObter
             // 
@@ -192,23 +199,25 @@
             // col_Id
             // 
             this.col_Id.Text = "Id";
+            this.col_Id.Width = 63;
             // 
             // col_Prd
             // 
             this.col_Prd.Text = "Produtos";
             this.col_Prd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.col_Prd.Width = 188;
+            this.col_Prd.Width = 196;
             // 
             // col_Qnt
             // 
             this.col_Qnt.Text = "Quantidade";
             this.col_Qnt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.col_Qnt.Width = 144;
+            this.col_Qnt.Width = 189;
             // 
             // col_Prc
             // 
             this.col_Prc.Text = "Preço";
             this.col_Prc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Prc.Width = 202;
             // 
             // Form1
             // 
